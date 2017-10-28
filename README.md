@@ -45,3 +45,25 @@ plot 'GlobalTemperatures.csv' using (rounded($3)):(1) smooth frequency with boxe
 ```
 
 ## r
+* xfrequency_r.png
+```
+hist(y$LandAverageTemperature, 
+	main = "Average Temperature Frequency", 
+	xlab = "Average Temperature", 
+	ylab = "Frequency")
+```
+* yfrequency_r.png
+```
+hist(y$LandAverageTemperatureUncertainty, 
+	main = "Average Temperature Uncertainty Frequency", 
+	xlab = "Average Temperature Uncertainty", 
+	ylab = "Frequency")
+```
+* scatterplot_r.png
+```
+plot(y$LandAverageTemperature,
+	y$LandAverageTemperatureUncertainty,
+	main = "Average Temperature vs Uncertainty",
+	xlab="Average Temperature", 
+	ylab="Average Temperature Uncertainty")
+```
