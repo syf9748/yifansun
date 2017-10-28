@@ -4,9 +4,9 @@
 Check the [database](https://github.com/syf9748/yifansun/blob/master/data/GlobalTemperatures.csv) in this folder. 
 ## gnuplot
 You can find three graphs plotted by gnuplot from my database. 
-The scattorplot.png shows the relationship between the global average temperature and the uncertainty within that temperature.
-The 
-Here are the lists of code used to create the three graphs in gnuplot:
+The scatterplot.png shows the relationship between the global average temperature and the uncertainty within that temperature.
+The the xfrequency.png and yfrequency.png shows the frequency distribution of x and y value from the scatterplot separately.
+Following are the lists of code used to create the three graphs in gnuplot:
 * scatterplot.png
 ```
 set terminal png
