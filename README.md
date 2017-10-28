@@ -7,7 +7,7 @@ You can find three graphs plotted by gnuplot from my database.
 The scattorplot.png shows the relationship between the global average temperature and the uncertainty within that temperature.
 The 
 Here are the lists of code used to create the three graphs in gnuplot:
-scatterplot.png
+* scatterplot.png
 ```
 set terminal png
 set output 'scatterplot.png'
@@ -17,7 +17,7 @@ set ylabel '<Temperature Uncertainty>'
 set datafile separator ","
 plot 'GlobalTemperatures.csv' using 2:3
 ```
-xfrequency.png
+* xfrequency.png
 ```
 set terminal png
 set output 'xfrequency.png'
