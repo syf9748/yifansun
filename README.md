@@ -30,5 +30,18 @@ bin_number(x) = floor(x/bin_width)
 rounded(x) = bin_width * (bin_number(x) + 0.5)
 plot 'GlobalTemperatures.csv' using (rounded($2)):(1) smooth frequency with boxes
 ```
+* yfrequency.png
+```
+set terminal png
+set output 'yfrequency.png'
+set title '<Uncertainty Frequency>'
+set xlabel '<Average Temperature Uncertainty>'
+set ylabel '<Frequency>'
+set datafile separator ","
+bin_width = .1
+bin_number(x) = floor(x/bin_width)
+rounded(x) = bin_width * (bin_number(x) + 0.5)
+plot 'GlobalTemperatures.csv' using (rounded($3)):(1) smooth frequency with boxes
+```
 
 ## r
