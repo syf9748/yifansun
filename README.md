@@ -45,6 +45,7 @@ plot 'GlobalTemperatures.csv' using (rounded($3)):(1) smooth frequency with boxe
 ```
 
 ## r
+The same three graphs plotted by rstudio:
 * xfrequency_r.png
 ```
 hist(y$LandAverageTemperature, 
